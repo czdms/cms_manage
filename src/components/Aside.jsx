@@ -29,7 +29,7 @@ export default function Aside() {
 
   };
   const items = [
-    getItem('查看文章列表list', 'listlist', <ReadOutlined />,),
+    // getItem('查看文章列表list', 'listlist', <ReadOutlined />,),
     getItem('查看文章列表', 'list', <ReadOutlined />,),
     getItem('文章编辑', 'edit', <EditOutlined />,),
     getItem('修改资料', 'means', <DatabaseOutlined />,),

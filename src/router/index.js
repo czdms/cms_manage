@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import App from "../App";
+// import List from "../pages/ListList1";
 import List from "../pages/List";
-import Listlist from "../pages/Listlist";
 import Means from "../pages/Means";
 import Edit from "../pages/Edit";
 import Login from "../pages/Login";
@@ -12,7 +12,7 @@ const BaseRouter = () => (
         <Routes>
             <Route path="/" element={<App />}>
                 <Route path="/list" element={<List />}></Route>
-                <Route path="/listlist" element={<Listlist />}></Route>
+                {/* <Route path="/listlist" element={<Listlist />}></Route> */}
                 <Route path="/means" element={<Means />}></Route>
                 <Route path="/edit/:id" element={<Edit />}></Route>
                 <Route path="/edit" element={<Edit />}></Route>

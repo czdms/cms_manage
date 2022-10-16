@@ -94,7 +94,7 @@ export default function Edit() {
       setTitle('')
       setSubTitle('')
     }
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname])
 
   return (
