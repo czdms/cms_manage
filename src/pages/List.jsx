@@ -23,7 +23,7 @@ export default function Listlist() {
       num: num,
       count: pageSize
     }).then(res => {
-      console.log(res)
+      //console.log(res)
       if (res.errCode === 0) {
         let { arr, total, num, count } = res.data
         setList(arr)
@@ -44,7 +44,7 @@ export default function Listlist() {
   const delFn = (id) => {
     
     ArticleDeleteApi({id}).then((res)=>{
-      console.log(res)
+      //console.log(res)
       if(res.errCode===0){
         message.success(res.message)
         setDeleteArticle(deleteArticle+1)

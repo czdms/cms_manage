@@ -32,7 +32,7 @@ function Means(props) {
     GetUserDataApi().then(res=>{
       // console.log(res)
       if(res.errCode===0){
-        console.log(res)
+        //console.log(res)
         sessionStorage.setItem('username',res.data.username)
 
       }
@@ -43,13 +43,13 @@ function Means(props) {
     // console.log(values)
     
     if(values.username && values.username !== sessionStorage.getItem('usernsme') && values.password.trim() !=="") {
-      console.log('121212')
+      //console.log('121212')
       ChangeUserDataApi({
         username:values.username,
         password:values.password
       }
       ).then(res=>{
-        console.log('666666666666',res)
+        //console.log('666666666666',res)
       })
     }
   }

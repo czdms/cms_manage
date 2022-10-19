@@ -13,7 +13,7 @@ export default function Edit() {
   const [subTitle, setSubTitle] = useState()
   const [editor, setEditor] = useState(null)
   const params = useParams()
-  console.log(params)
+  //console.log(params)
   // console.log('$$$$$$$$$')
   const [html, setHtml] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -81,7 +81,7 @@ export default function Edit() {
   useEffect(() => {
     if (params.id) {
       ArticleSearchApi({ id: params.id }).then(res => {
-        console.log('###########', res)
+        //console.log('###########', res)
         if (res.errCode === 0) {
           setHtml(res.data.content)
           setTitle(res.data.title)

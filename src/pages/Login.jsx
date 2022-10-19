@@ -10,13 +10,13 @@ export default function Login() {
     const navigate = useNavigate()
 
     const onFinish = (values) => {
-        console.log('Success:', values);
+        //console.log('Success:', values);
         LoginApi({
             username:values.username,
             password:values.password
         }).then(
             res=>{
-                console.log(res)
+                //console.log(res)
                 if(res.errCode===0){
                     message.success(res.message)
                     localStorage.setItem('avatar',res.data.avatar)
